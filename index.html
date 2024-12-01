@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishan Chauhan Crafting Web Solutions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        img {
+            float: left;
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .intro {
+            margin: 20px;
+            font-size: 20px;
+            text-align: center;
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .facebook-login {
+            background-image: url('facebook-image.jpg');
+            height: 60px;
+            width: 220px;
+            background-size: cover;
+            display: inline-block;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .facebook-login:hover {
+            transform: scale(1.1);
+        }
+
+        .form-container {
+            margin: 20px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .list-items {
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ol li {
+            margin: 5px 0;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        .list-items {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        marquee {
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+            background-color: #4CAF50;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes marquee-effect {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img {
+            height: 40px;
+            width: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.1);
+        }
+
+        .audio {
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .list-items {
+                padding: 15px;
+            }
+
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kishan Chauhan Crafting Web Solutions</h1>
+        <img src="WhatsApp Image 2024-12-01 at 4.14.10 PM.jpeg" alt="images">
+    </header>
+    <div class="container">
+        <h1>Kishan Chauhan</h1>
+        <p>Hello, my name is <strong>Kishan Chauhan</strong>. I am a final-year student at <strong>Don Bosco Engineering
+                College</strong>, located in Vikhroli, Mumbai.</p>
+        <p>My family consists of four members: my parents, me, and my younger sister.</p>
+        <p>I enjoy sharing knowledge about God and spirituality, and I strive to inspire others.</p>
+        <p class="author">— Kishan Chauhan</p>
+    </div>
+
+    <section class="intro">
+        <p>Welcome to my personal website! Here I share my journey of web development, creativity, and technology!</p>
+    </section>
+
+    <!-- Facebook Login Section -->
+    <div class="facebook-login">
+        <img src="images.png" alt="fackbok in a mark" width="300" height="150">
+    </div>
+
+    <!-- Form Section (Facebook Login-style) -->
+    <section class="form-container">
+        <h3>Login Form:</h3>
+        <form action="your-action-url" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+    <h1>Magic Bus Class Attendance</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attendance Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Isha</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>Neha</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>Bhagyashree</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>Dipali</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>Iqra</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>Saquib</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>Kishan</td>
+                <td>Present</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Ordered List Section -->
+    <section class="list-items">
+        <h3>Ordered List:</h3>
+        <ol>
+            <li>Isha</li>
+            <li>Bhagyashree</li>
+            <li>Neha</li>
+            <li>Dipali</li>
+        </ol>
+    </section>
+
+    <!-- Unordered List Section -->
+    <section class="list-items">
+        <h3>Unordered List:</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </section>
+
+    <!-- Definition List Section -->
+    <section class="list-items">
+        <h3>Definition List:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language used to structure web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets used to style web pages.</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language used to make web pages interactive.</dd>
+        </dl>
+    </section>
+
+    <!-- Social Media Links Section -->
+    <div class="social-links">
+        <h3>Connect with me:</h3>
+        <a href="https://github.com/kishanc1728" target="_blank"><img src="github-6980894_960_720.webp"
+                alt="GitHub"></a>
+        <!-- Replace with your GitHub link -->
+        <a href="https://www.linkedin.com/in/kishan-chauhan-9a77bb324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"><img src="in.png" alt="LinkedIn"></a>
+        <!-- Replace with your LinkedIn link -->
+        <a href="https://www.snapchat.com/add/chauhan.kisuu?share_id=su_voMyolxE&locale=en-US" target="_blank"><img
+                src="1-snapchat.jpg" alt="Snapchat"></a>
+        <!-- Replace with your Snapchat link -->
+        <a href="https://www.instagram.com/invites/contact/?igsh=1b8s53gxq644f&utm_content=97vlhn0" target="_blank"><img
+                src="download.jpg" alt="Instagram"></a>
+        <!-- Replace with your Instagram link -->
+    </div>
+
+    <!-- Audio Player Section -->
+    <div class="audio">
+        <audio controls>
+            <source src="(9) WhatsApp.html" type="audio/mp3"> <!-- Replace with your audio file -->
+            Your browser does not support the audio element.
+        </audio>
+        <video width="320" height="180" controls>
+            <source src="WhatsApp Video 2024-12-01 at 3.29.30 PM.mp4" type="video/mp4">
+        </video>
+
+
+    </div>
+
+    <!-- Marquee Text Section -->
+    <marquee behavior="scroll" direction="">Welcome to Kishan Chauhan </marquee>
+
+    <!-- Extra Features Section -->
+    <section>
+        <!-- <h1> to <h6> -->
+        <div class="section">
+            <h1>This is a Heading 1</h1>
+            <h2>This is a Heading 2</h2>
+            <h3>This is a Heading 3</h3>
+            <h4>This is a Heading 4</h4>
+            <h5>This is a Heading 5</h5>
+            <h6>This is a Heading 6</h6>
+        </div>
+
+        <!-- <p> -->
+        <div class="section">
+            <p>This is a paragraph of text.</p>
+        </div>
+
+        <!-- <pre> -->
+        <div class="section">
+            <pre>
+        This text preserves spacing and line breaks.
+            </pre>
+        </div>
+
+        <!-- <hr> -->
+        <div class="section">
+            <hr>
+            <p>This is a paragraph after a horizontal rule.</p>
+        </div>
+
+        <!-- <br> -->
+        <div class="section">
+            <p>This is line 1.<br>This is line 2 after a line break.</p>
+        </div>
+
+        <!-- <marquee> -->
+        <div class="section">
+            <marquee>This is a scrolling text using the marquee tag!</marquee>
+        </div>
+
+        <!-- <img> -->
+        <div class="section">
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+
+        <!-- <a> -->
+        <div class="section">
+            <a href="https://www.example.com" target="_blank">Visit Example</a>
+        </div>
+
+        <!-- <span> -->
+        <div class="section">
+            <span style="color: red;">This is a red colored text using span.</span>
+        </div>
+
+        <!-- <strong> -->
+        <div class="section">
+            <strong>This is strong text (bold).</strong>
+        </div>
+
+        <!-- <em> -->
+        <div class="section">
+            <em>This is emphasized text (italic).</em>
+        </div>
+
+        <!-- <i> -->
+        <div class="section">
+            <i>This is italicized text.</i>
+        </div>
+
+        <!-- <u> -->
+        <div class="section">
+            <u>This is underlined text.</u>
+        </div>
+
+        <!-- <audio> -->
+        <div class="section">
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
